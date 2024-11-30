@@ -1,0 +1,40 @@
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .footerHeader {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .footerLinks{
+    display:flex;
+flex-direction: column;
+gap:20PX;
+  }
+  
+  .footerWord {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .footerHeader {
+      font-size: 16px;
+    }
+    .footerColumn {
+        gap: 10px;
+      }
+
+      .footerLinks{
+    gap:10PX;
+      }
+    .footerWord {
+      font-size: 12px;
+    }
+  }
+  
