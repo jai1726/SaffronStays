@@ -1,40 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# SaffronStays - Landing Page 
+This project is a fully responsive and pixel-perfect landing page designed for SaffronStays, implemented using Next.js and CSS. The landing page highlights the company's offerings, with a focus on aesthetics, usability, and scalability.
 
-## Getting Started
+## Features
 
-First, run the development server:
+####  1.Fully Responsive Design
+    -->   Ensures optimal viewing experience across all devices, including desktops, tablets, and smartphones.
+##### 2. Custom Components:
+ --> Includes reusable components such as:
+ --> Carousel for showcasing key visuals.
+ --> Room cards with detailed information.
+ --> Footer with social media links and site navigation..
+##### 3. Pixel-Perfect Layout:
+    -->  Matches the provided Figma design with precise attention to detail.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Technolgies Used:
+###### Frontend: Next.js (React Framework) , Pure CSS
+###### Deployment : Hosted on Vercel
+
+
+## Installation and Setup
+#### Clone the repossitory:
+```bash 
+git clone https://github.com/jai1726/SaffronStays.git
+cd SaffronStays
+```
+#### Install Dependencies:
+```bash 
+npm install  
+```
+#### Run the Development Server:
+```bash 
+npm run dev   
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## **Project Folder Structure**
+```bash
+.
+├── components/            
+├── styles/               
+├── public/                 
+├── pages/            
+├── package.json                    
+├── README.md                
+├── next.config.js
+├──  vercel.json
+```                        
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### Contributors
+##### Dende Jagadeesh
+jagadeeshdende@gmail.com
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Linkedin:https://www.linkedin.com/in/jagadeesh-dende-67b625224/
