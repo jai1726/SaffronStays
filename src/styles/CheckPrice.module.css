@@ -1,0 +1,209 @@
+.priceContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 100; 
+}
+
+.priceBox {
+    width: 400px;
+    height: 350px;
+    background: #333333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #FFFFFF1A;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 0.3s ease; 
+}
+
+.priceDetails {
+    padding-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-bottom: 1px solid #FFFFFF1A;
+}
+
+.originalPrice {
+    font-family: 'Inter', sans-serif;
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.discountPrice {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF; 
+}
+
+.night {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.goldy {
+    border: 5px solid #404040;
+    border-radius: 25px;
+}
+
+.brder {
+    color: #F9D680;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #B6A16D66;
+    font-size: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.par {
+    opacity: 0.7;
+}
+
+.goldbutton {
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: linear-gradient(275.65deg, #A5915F 10.11%, #D2BA7F 55.01%, #B49F6B 93.26%);
+}
+
+.dateInputBlock {
+    display: flex;
+    flex-direction: column;
+    background-color: #333333; 
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border: 2px solid #999999;
+}
+.guestInputBlock{
+    border: 2px solid #999999;
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.calendarIcon,
+.guestIcon {
+    margin: 0 10px 0 20px;
+}
+
+.checkInOutText,
+.guestCountText {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1rem;
+    color: #999999;
+    margin-right: 10px;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+    position: relative;
+}
+
+.iconGroup {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    align-items: center;
+}
+
+.upIcon,
+.downIcon {
+    color: #333;
+    cursor: pointer;
+    margin: 2px 0;
+}
+
+.upIcon:hover,
+.downIcon:hover {
+    color: #007bff; 
+}
+
+.checkButton {
+    background: linear-gradient(275.65deg, #A5915F 10.11%, #D2BA7F 55.01%, #B49F6B 93.26%);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+
+@media (max-width: 1300px) {
+    .priceBox {
+        width: 350px;
+        height: 330px;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .discountPrice {
+        font-size: 18px;
+    }
+
+    .originalPrice {
+        font-size: 12px;
+    }
+    .brder {
+        
+      
+        padding: 8px;
+        border-radius: 20px;
+        border: 2px solid #B6A16D66;
+        font-size: 10px;
+        
+      
+    }
+    
+
+    .checkButton {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .priceBox {
+        width: 310px;
+        height: 270px;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .discountPrice {
+        font-size: 16px;
+    }
+
+    .originalPrice {
+        font-size: 11px;
+    }
+
+    .checkButton {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .priceContainer {
+        display: none; 
+    }
+}
