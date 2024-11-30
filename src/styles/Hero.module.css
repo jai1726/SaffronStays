@@ -1,0 +1,283 @@
+.hero {
+    padding: 0 20px;
+    position: relative;
+    width: 100%;
+    height: 650px; /* Adjust based on your design */
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.heroMedia {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+    display: block;
+    border-radius: 8px; /* Optional: Adds rounded corners for aesthetic appeal */
+  }
+  
+  /* Parent container adjustments for centering */
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the content does not overflow */
+    border-radius: 8px; /* Optional: Matches the image's rounded corners */
+    background-color: rgba(0, 0, 0, 0.1); /* Adds a subtle background for contrast */
+    opacity: 0.6;
+  }
+
+
+.textOverlay {
+    position: absolute;
+    top: 170px;
+    left:  calc(100% - 89%);
+    width: calc(100% - 40px);
+    max-width: 500px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+}
+
+.locationName {
+    font-family: 'Lora', serif;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: white;
+    margin: 0;
+}
+
+.locationDetails {
+    font-family: 'Lora', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    margin: 0;
+}
+
+.xSeriesBlock {
+    width:180px;
+    background-color: black;
+    border-radius: 4px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    opacity: 1;
+}
+
+.xSeriesText {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.x {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    background: linear-gradient(
+        82.26deg,
+        #857d4c 12.36%,
+        #bd9a64 18.18%,
+        #fbde98 49.05%,
+        #bd9a64 76.94%,
+        #857d4c 84.29%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.series {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: linear-gradient(
+        82.26deg,
+        #857d4c 12.36%,
+        #bd9a64 18.18%,
+        #fbde98 49.05%,
+        #bd9a64 76.94%,
+        #857d4c 84.29%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.carouselInfo {
+    position: absolute;
+    bottom: 60px;
+    right: 90px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #E2E2E233;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.thumbnail {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.imageNumber {
+    position: absolute;
+    left:100px;
+    top:80%;
+    /* margin-left: 5px; */
+    font-size: 14px;
+    font-weight: bold;
+    color:white;
+    z-index: 2;
+}
+
+.carouselDots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    opacity: 0.5;
+    border: 1px solid white;
+}
+
+.activeDot {
+    background-color: white;
+    opacity: 1;
+}
+.checkPrice{
+    position:absolute;
+    right:-20px;
+    bottom:-380px;
+    z-index:100;
+    opacity: 1;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        height: 400px; /* Adjust height for smaller screens */
+        padding: 0 15px;
+    }
+
+    .textOverlay {
+        top: 160px;
+        width: 100%;
+        max-width: none;
+    }
+
+    .locationName {
+        font-size: 2rem;
+    }
+
+    .locationDetails {
+        font-size: 1rem;
+    }
+
+    .xSeriesBlock {
+        position:absolute;
+        top:80px;
+        padding: 8px;
+        width: auto; /* Ensure it doesn't take the full width */
+        margin: 0 auto; /* Centering */
+    }
+
+    .x {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .series {
+        font-size: 12px; /* Adjust size for smaller screens */
+    }
+
+    .carouselInfo {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .thumbnail {
+        width: 80px;
+        height: 80px;
+    }
+
+    .imageNumber {
+        left:60px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 300px; /* Further adjust height for smaller devices */
+    }
+
+    .textOverlay {
+        top: 120px;
+        gap:2px;
+    }
+
+    .locationName {
+        font-size: 1.5rem;
+    }
+
+    .locationDetails {
+        font-size: 0.875rem;
+    }
+
+    .xSeriesBlock {
+        top:60px;
+        padding: 6px;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .x {
+        font-size: 16px;
+    }
+
+    .series {
+        font-size: 10px;
+    }
+
+    .carouselInfo {
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .thumbnail {
+        width:40px;
+        height: 40px;
+    }
+
+    .imageNumber {
+        left:27px;
+        font-size: 10px;
+    }
+}
+
