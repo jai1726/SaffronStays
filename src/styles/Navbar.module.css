@@ -1,0 +1,166 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px; 
+    height: 90px; 
+}
+
+
+.navbar > div {
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
+
+
+.xseries {
+    display: flex;
+    align-items: center;
+    gap: 6px; 
+    font-size: 2rem; 
+    background: linear-gradient(90deg, #857D4C, #BD9A64, #FBDE98, #BD9A64, #857D4C);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 200;
+}
+.x{
+    font-size:3.4rem;
+    font-weight: 100;
+}
+
+
+.searchBar {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E2E2E233;
+    border-radius: 25px; 
+    padding: 4px 24px; 
+    background-color: #222222; 
+    width: 319px;
+    gap: 5px;
+}
+
+.searchBar input {
+    border: none;
+    background: transparent;
+    color: #CCCCCC; 
+    font-size: 12px;
+    outline: none;
+    margin-left: 5px; 
+    flex-grow: 1; 
+}
+
+
+.searchBar .fa-search {
+    color: white !important; 
+}
+
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+.logo img {
+    width: 30px; 
+    height: auto;
+}
+
+.companyName {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF; 
+}
+
+
+.mobile {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    color: #CCCCCC;
+    font-size: 14px;
+}
+
+
+.loginButton button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #FFFFFF;
+    color: #000000; 
+    border-radius: 25px; 
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600; 
+    transition: background-color 0.3s;
+}
+
+.loginButton button:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 1180px) {
+    .navbar{
+        padding:0 60px;
+    }
+    .searchBar {
+        width: 80px; 
+        padding: 10px 10px; 
+    }
+    .options {
+        gap:20px;
+    }
+    .searchBar input {
+        display: none; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 40px;
+        flex-direction: row-reverse;
+    }
+
+    .left .xseries,
+    .options .loginButton, 
+    .options .mobile, 
+    .options .logo .companyName { 
+        display: none;
+    }
+
+    .searchBar {
+        width: 40px; 
+        padding: 10px 10px;
+    }
+
+    .searchBar input {
+        display: none; 
+    }
+
+    .searchBar .fa-search {
+        font-size: 20px; 
+    }
+
+   
+    .navbar > div {
+    
+        justify-content: space-between; 
+    }
+}
